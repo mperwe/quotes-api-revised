@@ -1,0 +1,7 @@
+{
+    "watch": ["controllers", "routes", "app.js", "middleware"],
+    "ext": "js,json",
+    "ignore": ["logs/*"],
+    "exec": "node app.js"
+  }
+  
