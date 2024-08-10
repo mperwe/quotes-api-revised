@@ -14,8 +14,14 @@ app.use(logger);
 app.use('/authors', authorsRoutes);
 app.use('/quotes', quotesRoutes);
 
+// Example of app.get to handle the root endpoint
+app.get('/', (req, res) => {
+    res.send('Welcome to the Quotes API!');
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
