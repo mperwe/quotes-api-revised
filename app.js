@@ -14,7 +14,6 @@ app.use(logger);
 app.use('/authors', authorsRoutes);
 app.use('/quotes', quotesRoutes);
 
-// Example of app.get to handle the root endpoint
 app.get('/', (req, res) => {
     res.send('Welcome to the Quotes API!');
 });
